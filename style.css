@@ -1,3 +1,22 @@
+
+.collapsible {
+    background-color: #058ED9;
+    color: whitesmoke;
+    font-size: 50px;
+    display: flexbox;
+    justify-content: space-evenly;
+    border-color: #058ED9;
+    border-radius: 15%;
+}
+.content-container{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.content-container div{
+border: 1px #ccc solid;
+padding: 10px;
+}=======
 * {
     box-sizing: border-box;
     padding: 0;
