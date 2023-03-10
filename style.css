@@ -11,8 +11,9 @@
 .content-container{
     display: flex;
     align-items: flex-start;
-    flex-direction: column;
-    width: 50%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: max-content;
 }
 .content-container div{
 border: 1px #ccc solid;
@@ -28,21 +29,6 @@ body {
     background-color: #f5f5dc;
 }
 
-
-.aside {
-    width: 30%;
-    padding: 15px;
-    margin-left: 15px;
-    float: right;
-    border: 2px solid black;
-    background-color: #058ed9;
-    word-wrap: break-word;
-}
-
-aside h1 {
-    font-size: 50px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 
 div h2 {
     font-size: 30px;
