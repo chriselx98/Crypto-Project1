@@ -1,5 +1,8 @@
 .content-container{
-
+display: flexbox;
+flex-direction: column;
+justify-content: end;
+width: 50%;
 }
 
 .collapsible {
@@ -24,6 +27,7 @@
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
