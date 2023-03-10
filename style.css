@@ -1,25 +1,24 @@
-*{box-sizing: border-box;
+.content-container{
+
 }
 
 .collapsible {
   background-color: #058ED9;
   color: whitesmoke;
   font-size: 25px;
-  display: flexbox;
-  justify-content: space-evenly;
-  border-color: #058ED9;
+  border-color: #e8edf0;
   border-radius: 0%;
-  border: 2px;
   cursor: pointer;
-  padding: 18px;
-  width: 25%;
+  padding: 20px;
+  width: 100%;
   text-align: center;
-  outline: none;
-  
 }
-.active, .collapsible:hover {
+
+.active,
+.collapsible:hover {
   background-color: #555;
 }
+
 .content {
   padding: 0 18px;
   display: none;
