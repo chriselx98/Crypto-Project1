@@ -10,55 +10,42 @@
     <link rel="stylesheet" href="style.css">
     <title>Crypto-Project</title>
 </head>
-<!--Navigation bar-->
-<nav>
-    <!-- The class for the main website logo-->
-    <div class="logo">
-        <a href="#" class="logo-text">Crypto Site</a>
-    </div>
-    <div class="nav-links">
-        <a id="about-link" href="#">About</a>
-        <a id="faq-link" href="#">FAQ</a>
-        <a id="contact-link" href="#">Contact Us</a>
-    </div>
-</nav>
-<!-- Body -->
-
-<body>
-    <!--This is expanding content-->
-    <div class="content-container">
-        <!--Collapsible for exchanges-->
-        <button type="button" class="collapsible">What Are Exchanges?</button>
-        <div class="content">
-            <p>A cryptocurrency exchange, or a digital currency exchange, is a business that allows customers to trade
-                cryptocurrencies or digital currencies for other assets, such as conventional fiat money or other
-                digital currencies.</p>
-        </div>
-        <!--Collapsible for crypto-->
-
-
-        <button type="button" class="collapsible">What is Crypto?</button>
-        <div class="content">
-            <p>A cryptocurrency, crypto-currency, or crypto is a digital currency designed to work as a medium of
-                exchange through a computer network that is not reliant on any central authority, such as a government
-                or bank, to uphold or maintain it.</p>
-        </div>
-
-        <!--Collapsible for crypto-->
-
-        <button type="button" class="collapsible">Current Crypto News</button>
-        <div class="content">
-            <p>This is a test that will show up.</p>
-        </div>
-
-        <!--Extra collapsible: TBD-->
-
-        <button type="button" class="collapsible">TBD</button>
-        <div class="content">
-            <p>This is a test that will show up.</p>
-        </div>
-    </div>
-
+      <table class="table">
+        <caption>Powered by CoinGecko</caption>
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Market</th>
+            <th scope="col">Bitcoin</th>
+            <th scope="col">Ethereum</th>
+            <th scope="col">Tether</th>
+            <th scope="col">USD-coin</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <th scope="row">1</th>
+            <td>Current Price</td>
+            <td>NA</td>
+            <td>NA</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Change in 24H</td>
+            <td>NA</td>
+            <td>NA</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Change in 30 Days</td>
+            <td>NA</td>
+          </tr>
+        </tbody>
+      </table>
+        <!--
+     <div id="repo-table"></div>
+     <div id="price-change"></div>
+    -->
     <script src="script.js"></script>
 </body>
 
