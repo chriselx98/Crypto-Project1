@@ -1,5 +1,5 @@
 var buttonC = document.getElementsByClassName('collapsible')
-var i;
+
 
 for (i = 0; i < buttonC.length; i++) {
     buttonC[i].addEventListener('click', function()  {
@@ -13,23 +13,6 @@ for (i = 0; i < buttonC.length; i++) {
       });
     }
 
-function getBitcoin() {
-var bitcoinC = ' http://api.bitcoincharts.com/v1/markets.json'
-
-fetch(bitcoinC)
-    .then(function(response) {
-        return response.json();
-    })
-    .then(function (data) {
-        console.log(data);
-
-    }
-    
-    
-    ) 
-}
-
-getBitcoin();
 // Nav bar link declarations
 const aboutLink = document.getElementById("about-link");
 const faqLink = document.getElementById("faq-link");
@@ -47,3 +30,36 @@ contactLink.addEventListener("click", () => {
   // For when the contact link is clicked
   console.log("Contact link clicked");
 });
+
+
+var tableBody = document.getElementById('repo-table')
+var priceCh24 = document.getElementById('price-change')
+function bcoin(){
+
+  const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=4&page=1&sparkline=false&price_change_percentage=1h%2C7d%2C30d'
+  fetch(url)
+    .then(function(response){
+      return response.json();
+    })
+    .then(function(data){
+      console.log(data);
+    
+
+    for (var i = 0; i < data.length; i++) {
+      
+      var priceChange24 = document.createElement('p');
+      var currentP = document.createElement('p');
+
+      currentP.textContent = data[i].current_price;
+      priceChange24.textContent = data[i].price_change_24h;
+      
+      tableBody.appendChild(currentP);
+      priceCh24.appendChild(priceChange24);
+    }
+  });
+}
+
+bcoin();
+
+l
+

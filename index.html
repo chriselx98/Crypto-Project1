@@ -21,66 +21,44 @@
           <a id="contact-link" href="#">Contact Us</a>
         </div>
       </nav>
-    <div class="content-container">
-        <div class="bitcoin-container">
-            <div class="bitcoin logo">
-                <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=024" width="100" height="100" alt="Bitcoin Logo" />
-                <button type="button" class="collapsible">Bitcoin</button>
-                <div class="content">
-                    <p>This is a test that will show up.</p> 
-                </div>
-            </div>
-        </div>
-        <div class="ethereum-container">
-            <div class="ethereum logo">
-                <img src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=024" width="100" height="100" alt="Ethereum Logo" />
-                <button type="button" class="collapsible">Ethereum</button>
-                <div class="content">
-                   <p>This is a test that will show up.</p> 
-                </div>
-            </div>
-        </div>
-        <div class="tether-container">
-            <div class="tether logo">
-                <img src="https://cryptologos.cc/logos/tether-usdt-logo.png?v=024" width="100" height="100"
-                    alt="Tether Logo" />
-                <button type="button" class="collapsible">Tether</button>
-                <div class="content">
-                    <p>This is a test that will show up.</p> 
-                </div>
-            </div>
-        </div>
-        <div class="litecoin-container">
-            <div class="litecoin logo">
-                <img src="https://cryptologos.cc/logos/litecoin-ltc-logo.png?v=024" width="100" height="100"
-                    alt="Litecoin Logo" />
-                <button type="button" class="collapsible">Litecoin</button>
-                <div class="content">
-                    <p>This is a test that will show up.</p> 
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <aside class="aside">
-        <h1>Exchanges</h1>
-        <div>
-            <h2><a href="https://www.coinbase.com/explore">Coinbase</a></h2>
-            <p>Coinbase is a user friendly exchange!</p>
-        </div>
-        <div>
-            <h2><a href="https://www.binance.com/en/markets/overview">Binance</a></h2>
-            <p>Binance is a user friendly exchange!</p>
-        </div>
-        <div>
-            <h2><a href="https://www.okx.com/markets/prices">OKX</a></h2>
-            <p>OKX is a user friendly exchange!</p>
-        </div>
-        <div>
-            <h2><a href="https://crypto.com/price">Crypto.com</a></h2>
-            <p>Crypto.com is a user friendly exchange!</p>
-        </div> 
-    </aside>
+    
+      <table class="table">
+        <caption>Powered by CoinGecko</caption>
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Market</th>
+            <th scope="col">Bitcoin</th>
+            <th scope="col">Ethereum</th>
+            <th scope="col">Tether</th>
+            <th scope="col">USD-coin</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <th scope="row">1</th>
+            <td>Current Price</td>
+            <td>NA</td>
+            <td>NA</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Change in 24H</td>
+            <td>NA</td>
+            <td>NA</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Change in 30 Days</td>
+            <td>NA</td>
+          </tr>
+        </tbody>
+      </table>
+        <!--
+     <div id="repo-table"></div>
+     <div id="price-change"></div>
+    -->
+    
     <script src="script.js"></script>
 </body>
 </html>
