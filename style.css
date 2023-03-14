@@ -1,8 +1,16 @@
+.slogan{
+  color: white;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
 .content-container{
 display: flexbox;
 flex-direction: column;
 justify-content: end;
 width: 50%;
+font-size: xx-large;
 }
 
 .collapsible {
@@ -153,7 +161,7 @@ nav {
 /* Styling the logo */
 .logo a.logo-text {
   color: white;
-  font-size: 24px;
+  font-size: 35px;
   font-weight: bold;
   text-decoration: none;
   /* Applying imported font to text */
