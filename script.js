@@ -1,6 +1,10 @@
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
+var cprice;
+
+
+
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
@@ -17,6 +21,7 @@ for (i = 0; i < coll.length; i++) {
 fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false')
   .then(response => response.json())
   .then(data => {
+    // cprice = data;
     //creating first elements
     const table = document.createElement('table');
     const thead = document.createElement('thead');
@@ -80,24 +85,25 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=mark
     console.error(error);
   });
 
-
-function getBitcoin() {
-var bitcoinC = ' http://api.bitcoincharts.com/v1/markets.json'
-
-fetch(bitcoinC)
-    .then(function(response) {
-        return response.json();
+  
+function simplePrice() {
+  fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Ctether%2Cbnb%2Cusdcoin%2Cxrp%2Ccardano%2Cpolygon%2Cdogecoin%2Clido%20staked%20ether&vs_currencies=usd')
+    .then (function(response){
+      return response.json();
     })
-    .then(function (data) {
-        console.log(data);
-
-    }
-    
-    
-    ) 
-} 
+    .then(function(data){
+      console.log(data);
+      Object.keys(data).forEach((key) => {
+        document.getElementById(key).innerHTML = data[key].usd;
+      })
 
 
+      var savePrice = data;
+      localStorage.setItem("current data", JSON.stringify(savePrice))
+      
+    })
+}
+simplePrice();
 
 // Nav bar link declarations
 const aboutLink = document.getElementById("about-link");
