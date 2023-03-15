@@ -1,6 +1,9 @@
 var coll = document.getElementsByClassName("collapsible");
 var i;
+
 var cprice;
+
+
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
@@ -81,6 +84,7 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=mark
   .catch(error => {
     console.error(error);
   });
+
   
 function simplePrice() {
   fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Ctether%2Cbnb%2Cusdcoin%2Cxrp%2Ccardano%2Cpolygon%2Cdogecoin%2Clido%20staked%20ether&vs_currencies=usd')

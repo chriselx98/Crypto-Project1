@@ -1,8 +1,16 @@
+.slogan{
+  color: white;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
 .content-container{
 display: flexbox;
 flex-direction: column;
 justify-content: end;
 width: 50%;
+
 }
 
 .collapsible {
@@ -34,6 +42,12 @@ body {
   background-color: #f5f5dc;
 }
 
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 div h2 {
   font-size: 30px;
@@ -120,3 +134,65 @@ width: 50%;
   background-color: #f1f1f1;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+=======
+
+body {
+  background-color: #f5f5dc;
+}
+
+
+div h2 {
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div p {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #058ED9;
+  padding: 20px;
+}
+
+/* Styling the logo */
+.logo a.logo-text {
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  text-decoration: none;
+  /* Applying imported font to text */
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Styling links inside nav bar */
+nav .nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav .nav-links a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* COn hover color changes like this */
+nav .nav-links a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Adding a color to an active link */
+nav .nav-links .active {
+  background-color: #4CAF50;
+}
+
